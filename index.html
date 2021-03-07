@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hekimler</title>
+    <script src="httpGet.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body style="margin: 0">
+<div id="form_div" style="font-size: 24px; font-family: arial; padding: 50px; text-align: center;">
+    <form action="" onsubmit="hazirla(); return false" style="margin-bottom: 70px">
+        <input type="text" id="url_input" placeholder="ilin adı" style="font-size: 24px; padding: 4px 10px" autocomplete="off" spellcheck="false">
+        <input type="submit" value="hazırla" style="font-size: 24px; padding: 4px 10px"/>
+    </form>
+
+    <div style="padding: 50px; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 520px;">
+        <p>il adını yaz, enterla. tablo geldikten sonra ctrl+a ile tümünü kopyala, excell'de yapıştır. ama önce aşağıdaki chrome eklentisini <b>kur</b> ve <b>aktif</b> et.</p>
+        <a href="https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf">
+            chrome eklentisini indirmek için tıkla
+        </a>
+    </div>
+</div>
+<div id="export"></div>
+<div id="index" style="display:none"></div>
+<div id="sub" style="display:none"></div>
+</body>
+</html>
